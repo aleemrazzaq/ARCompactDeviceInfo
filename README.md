@@ -78,3 +78,5 @@ How it Works
         
         // Check for Device Name 
         print("Device Name is :" + (ARCompactDeviceInfo.shared.deviceNameString())!)
+
+NOTE: Inspired from SDVersion Library. https://github.com/sebyddd/SDVersion
