@@ -1,9 +1,9 @@
 # ARCompactDeviceInfo
-A detail info lightweight Cocoa library for detecting current device Support for Secure Enclave, FaceID, TouchID, Device Model and Screen Size
+A detail info lightweight Cocoa library for detecting current device Support for Secure Enclave, FaceID, TouchID, Device Model and Screen Size, Written in Swift but can use on both Swift and Objective C. You can check Demo project for how to use or below code for quick look to use.
 
 How it Works
 
-SWIFT
+Swift:
 
 
         // check for Secure Encalve availabe
@@ -84,7 +84,7 @@ SWIFT
         
         
         
-Objective C
+Objective C:
 
     if([[ARCompactDeviceInfo shared] deviceSupportSecureEnclave])
     {
