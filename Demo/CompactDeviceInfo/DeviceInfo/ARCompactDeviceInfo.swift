@@ -9,6 +9,7 @@
 import UIKit
 import LocalAuthentication
 
+@objcMembers
 open class ARCompactDeviceInfo: NSObject {
     
     //MARK:- Variable declerations
@@ -230,7 +231,7 @@ open class ARCompactDeviceInfo: NSObject {
         }
         return isSupported
     }
-    func deviceVersion() -> DeviceVersion {
+    public func deviceVersion() -> DeviceVersion {
         var systemInfo = utsname()
         uname(&systemInfo)
         
@@ -245,7 +246,7 @@ open class ARCompactDeviceInfo: NSObject {
         return version
     }
     
-    func resolutionSize() -> DeviceSize {
+    public func resolutionSize() -> DeviceSize {
         var screenHeight: CGFloat = 0
         if ARCompactDeviceInfo.shared.versionGreaterThanOrEqual(to: "8") {
             screenHeight = max(UIScreen.main.bounds.size.height, UIScreen.main.bounds.size.width)
@@ -267,7 +268,7 @@ open class ARCompactDeviceInfo: NSObject {
         }
     }
     
-    func deviceSize() ->DeviceSize {
+    public func deviceSize() ->DeviceSize {
         var deviceSize: DeviceSize = self.resolutionSize()
         if self.isZoomed() {
             if deviceSize == .Screen4inch {
@@ -363,7 +364,7 @@ open class ARCompactDeviceInfo: NSObject {
 }
 
 
-enum DeviceVersion : Int {
+@objc public enum DeviceVersion : Int {
     case UnknownDevice = 0
     case Simulator = 1
     case iPhone4 = 3
@@ -404,7 +405,8 @@ enum DeviceVersion : Int {
     case iPodTouch6Gen = 38
 }
 
-enum DeviceSize : Int {
+
+@objc public enum DeviceSize : Int {
     case UnknownSize = 0
     case Screen3Dot5inch = 1
     case Screen4inch = 2
