@@ -101,8 +101,14 @@ open class ARCompactDeviceInfo: NSObject {
             
             if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
                 //As of 11.2 typeFaceID is now just faceID
-                if (context.biometryType == .faceID) {
-                    return true
+                
+                if #available(iOS 11.0, *) {
+                    if (context.biometryType == .faceID) {
+                        return true
+                    }
+                } else {
+                    // Face ID isn't available before iOS 11
+                       return false
                 }
             }
         }
@@ -118,7 +124,14 @@ open class ARCompactDeviceInfo: NSObject {
         
         if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             //As of 11.2 typeFaceID is now just faceID
-            if (context.biometryType == .touchID) {
+            if #available(iOS 11.0, *) {
+                if (context.biometryType == .touchID) {
+                    return true
+                } else {
+                    return false
+                }
+            } else {
+                // It support becuase Touch ID becuase it passed canEvaluatePolicy check and also FaceID isn't available before iOS 11
                 return true
             }
         }
@@ -278,7 +291,6 @@ open class ARCompactDeviceInfo: NSObject {
     
     func deviceNameString() -> String? {
         return ARCompactDeviceInfo.shared.deviceName(ARCompactDeviceInfo.shared.deviceVersion())
-        
     }
     
     func deviceName(_ deviceVersion: DeviceVersion) -> String? {
