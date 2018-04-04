@@ -45,8 +45,10 @@ open class ARCompactDeviceInfo: NSObject {
                              "iPhone10,5": DeviceVersion.iPhone8Plus.rawValue,
                              "iPhone10,3": DeviceVersion.iPhoneX.rawValue,
                              "iPhone10,6": DeviceVersion.iPhoneX.rawValue,
+                             
                              "i386": DeviceVersion.Simulator.rawValue,
                              "x86_64": DeviceVersion.Simulator.rawValue,
+                             
                              "iPad1,1": DeviceVersion.iPad1.rawValue,
                              "iPad2,1": DeviceVersion.iPad2.rawValue,
                              "iPad2,2": DeviceVersion.iPad2.rawValue,
@@ -86,6 +88,7 @@ open class ARCompactDeviceInfo: NSObject {
                              "iPad7,4": DeviceVersion.iPadPro10Dot5Inch.rawValue,
                              "iPad7,5":DeviceVersion.iPad62018.rawValue,
                              "iPad7,6":DeviceVersion.iPad62018.rawValue,
+                             
                              "iPod1,1": DeviceVersion.iPodTouch1Gen.rawValue,
                              "iPod2,1": DeviceVersion.iPodTouch2Gen.rawValue,
                              "iPod3,1": DeviceVersion.iPodTouch3Gen.rawValue,
@@ -312,6 +315,7 @@ open class ARCompactDeviceInfo: NSObject {
                 .iPhone8Plus: "iPhone 8 Plus",
                 .iPhoneX: "iPhone X",
                 .iPhoneSE: "iPhone SE",
+                
                 .iPad1: "iPad 1",
                 .iPad2: "iPad 2",
                 .iPadMini: "iPad Mini",
@@ -328,12 +332,14 @@ open class ARCompactDeviceInfo: NSObject {
                 .iPadPro10Dot5Inch: "iPad Pro 10.5 inch",
                 .iPadPro12Dot9Inch2Gen: "iPad Pro 12.9 inch",
                 .iPad62018: "iPad 6 2018",
+                
                 .iPodTouch1Gen: "iPod Touch 1st Gen",
                 .iPodTouch2Gen: "iPod Touch 2nd Gen",
                 .iPodTouch3Gen: "iPod Touch 3rd Gen",
                 .iPodTouch4Gen: "iPod Touch 4th Gen",
                 .iPodTouch5Gen: "iPod Touch 5th Gen",
                 .iPodTouch6Gen: "iPod Touch 6th Gen",
+                
                 .Simulator: "Simulator",
                 .UnknownDevice: "Unknown Device"] [deviceVersion]
     }
@@ -370,6 +376,7 @@ open class ARCompactDeviceInfo: NSObject {
 @objc public enum DeviceVersion : Int {
     case UnknownDevice = 0
     case Simulator = 1
+    
     case iPhone4 = 3
     case iPhone4S = 4
     case iPhone5 = 5
@@ -385,6 +392,7 @@ open class ARCompactDeviceInfo: NSObject {
     case iPhone8Plus = 15
     case iPhoneX = 16
     case iPhoneSE = 17
+    
     case iPad1 = 18
     case iPad2 = 19
     case iPadMini = 20
@@ -401,6 +409,7 @@ open class ARCompactDeviceInfo: NSObject {
     case iPadPro12Dot9Inch2Gen = 31
     case iPadPro10Dot5Inch = 32
     case iPad62018 = 33
+    
     case iPodTouch1Gen = 34
     case iPodTouch2Gen = 35
     case iPodTouch3Gen = 36
