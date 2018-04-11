@@ -35,23 +35,8 @@ Swift:
         case .iPhone8:
             print("you've iPhone8")
             break
-        case .iPhone8Plus:
-            print("you've iPhone8Plus")
-            break
-        case .iPhone7:
-            print("you've iPhone7")
-            break
-        case .iPhone7Plus:
-            print("you've iPhone7Plus")
-        case .iPhone6:
-            print("you've iPhone6")
-        case .iPhone6Plus:
-            print("you've iPhone6Plus")
-            break
         case .iPadPro9Dot7Inch:
             print("you've iPadPro9Dot7Inch")
-        case .iPadPro10Dot5Inch:
-            print("you've iPadPro10Dot5Inch")
         case .iPadPro12Dot9Inch:
             print("you've iPadPro12Dot9Inch")
             break
@@ -112,26 +97,11 @@ Objective C:
         case DeviceVersionIPhone8:
             NSLog(@"you've iPhone8");
             break;
-        case DeviceVersionIPhone8Plus:
-            NSLog(@"you've iPhone8Plus");
-            break;
-        case DeviceVersionIPhone7:
-            NSLog(@"you've iPhone7");
-            break;
-        case DeviceVersionIPhone7Plus:
-            NSLog(@"you've iPhone7Plus");
-            break;
-        case DeviceVersionIPhone6:
-            NSLog(@"you've iPhone6");
-            break;
         case DeviceVersionIPhone6Plus:
             NSLog(@"you've iPhone6Plus");
             break;
         case DeviceVersionIPadPro9Dot7Inch:
             NSLog(@"you've iPadPro9Dot7Inch");
-            break;
-        case DeviceVersionIPadPro10Dot5Inch:
-            NSLog(@"you've iPadPro10Dot5Inch");
             break;
         case DeviceVersionIPadPro12Dot9Inch:
             NSLog(@"you've iPadPro12Dot9Inch");
