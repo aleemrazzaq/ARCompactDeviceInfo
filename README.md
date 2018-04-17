@@ -3,7 +3,7 @@ A detail info lightweight Cocoa library for detecting current device Support for
 
 How it Works
 
-Swift:
+### `Swift:`
 
 
         // check for Secure Encalve availabe
@@ -69,7 +69,7 @@ Swift:
         
         
         
-Objective C:
+### `Objective C:`
 
     if([[ARCompactDeviceInfo shared] deviceSupportSecureEnclave])
     {
