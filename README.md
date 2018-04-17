@@ -131,5 +131,4 @@ How it Works
     
     NSLog(@"Device Name is : %@", [[ARCompactDeviceInfo shared] deviceNameString]);
 
-
-NOTE: Inspired from SDVersion Library. https://github.com/sebyddd/SDVersion
+NOTE: Inspired from SDVersion Library. [SDVersion](https://github.com/sebyddd/SDVersion)
