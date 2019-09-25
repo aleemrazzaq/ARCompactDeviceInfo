@@ -1,6 +1,10 @@
 # ARCompactDeviceInfo
 A detail info lightweight Cocoa library for detecting current device Support for Secure Enclave, FaceID, TouchID, Device Model and Screen Size, Written in Swift but can use on both Swift and Objective C. You can check Demo project for how to use or below code for quick look to use.
 
+
+UPDATE:
+### iPhone 11, iPad mini 5 Generation, iPad Air 3rd Generation and iPod 7th Generation Supported
+
 How it Works
 
 ### `Swift:`
